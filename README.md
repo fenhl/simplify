@@ -8,6 +8,12 @@ This is my first (and so far only) texture pack. It is a “simple” pack (thus
 [Tiny Pixels]: http://www.minecrafttexturepacks.com/tiny-pixels/ (MinecraftTexturePacks.com: Tiny Pixels)
 [BoxCraft]: http://www.minecraftforum.net/topic/381855-16x110-boxcraft-v4-over-28000-downloads/ (Minecraft Forum: BoxCraft)
 
+This texture pack should update whenever Minecraft updates, so if its version number doesn't match that of the latest minecraft release, feel free to submit an issue.
+
+There are some [screenshots][].
+
+[screenshots]: http://fenhl.net/mc/simplify (FenuSrv: Simplify: Screenshots)
+
 License
 =======
 
