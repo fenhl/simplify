@@ -28,7 +28,6 @@ If you download the texture pack as a zip, you can put the file in the texture p
 
 You can also clone the repository.
 
-Finally, here are some mirrors (AdF.ly supported): [Mirror 1][FenuSrv] • [Mirror 2][Dropbox]
+Finally, there is an AdF.ly supported [mirror][FenuSrv].
 
 [FenuSrv]: http://adf.ly/CVaNk (AdF.ly: FenuSrv: Simplify)
-[Dropbox]: http://adf.ly/CdDBh (AdF.ly: Dropbox: Fenhl: Simplify)
