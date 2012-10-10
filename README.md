@@ -28,6 +28,6 @@ If you download the texture pack as a zip, you can put the file in the texture p
 
 You can also clone the repository.
 
-Finally, there is an AdF.ly supported [mirror][FenuSrv].
+Finally, there is an AdF.ly supported [mirror][FenuSrv] (which may be outdated).
 
 [FenuSrv]: http://adf.ly/CVaNk (AdF.ly: FenuSrv: Simplify)
