@@ -1,25 +1,11 @@
 Simplify
 ========
 
-Simplify is a “simple” texture pack for Minecraft.
+Simplify is a texture pack for [Minecraft][]. It is a “simple” pack (thus the name), featuring basic recurring shapes and color palettes, and shaded edges to help tell adjacent blocks apart. While it may appear similar to other texture packs, it was created by Fenhl, using only the default textures as a starting point.
 
-This is my first (and so far only) texture pack. It is a “simple” pack (thus the name), featuring basic recurring shapes and color palettes, and shaded edges to help tell adjacent blocks apart. It is similar to [Tiny Pixels][] or [BoxCraft][], but I made it myself, using only the default textures as a starting point.
-
-[Tiny Pixels]: http://www.minecrafttexturepacks.com/tiny-pixels/ (MinecraftTexturePacks.com: Tiny Pixels)
-[BoxCraft]: http://www.minecraftforum.net/topic/381855-16x110-boxcraft-v4-over-28000-downloads/ (Minecraft Forum: BoxCraft)
-
-This texture pack should update whenever Minecraft updates, so if its version number doesn't match that of the latest minecraft release, feel free to submit an issue.
+This texture pack should update whenever Minecraft updates, so if it lacks textures from the latest minecraft release, feel free to submit an issue.
 
 There are some [screenshots][].
-
-[screenshots]: http://fenhl.net/mc/simplify (FenuSrv: Simplify: Screenshots)
-
-License
-=======
-
-Simplify is licensed [CC BY-SA 3.0][].
-
-[CC BY-SA 3.0]: http://creativecommons.org/licenses/by-sa/3.0/ (Creative Commons: BY-SA 3.0)
 
 Download
 ========
@@ -28,6 +14,8 @@ If you download the texture pack as a zip, you can put the file in the texture p
 
 You can also clone the repository.
 
-Finally, there is an AdF.ly supported [mirror][FenuSrv] (which may be outdated).
+Finally, there is an AdF.ly supported [mirror][FenuSrv mirror] (which may be outdated).
 
-[FenuSrv]: http://adf.ly/CVaNk (AdF.ly: FenuSrv: Simplify)
+[FenuSrv mirror]: http://adf.ly/CVaNk (AdF.ly: FenuSrv: Simplify)
+[Minecraft]: http://minecraft.net/ (Minecraft)
+[screenshots]: http://fenhl.net/mc/simplify (FenuSrv: Simplify: Screenshots)
