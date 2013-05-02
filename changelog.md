@@ -1,3 +1,5 @@
+This is the list of changes between the first public release and the move to git.
+
 1.3.2.fh1
 =========
 
