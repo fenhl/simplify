@@ -14,8 +14,5 @@ If you download the texture pack as a zip, you can put the file in the texture p
 
 You can also clone the repository.
 
-Finally, there is an AdF.ly supported [mirror][FenuSrv mirror] (which may be outdated).
-
-[FenuSrv mirror]: http://adf.ly/CVaNk (AdF.ly: FenuSrv: Simplify)
 [Minecraft]: http://minecraft.net/ (Minecraft)
-[screenshots]: http://fenhl.net/mc/simplify (FenuSrv: Simplify: Screenshots)
+[screenshots]: http://fenhl.net/mc/simplify.php (Fenhl: Simplify: Screenshots)
