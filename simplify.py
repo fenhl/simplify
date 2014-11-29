@@ -15,6 +15,11 @@ palette = {
         'highlight_color': '#b0ffff',
         'shadow_color': '#00ffff'
     },
+    'moss': {
+        'color': '#234721',
+        'highlight_color': '#2b6926',
+        'shadow_color': '#1f2a2f'
+    },
     'stone': {
         'color': '#808080',
         'highlight_color': '#a3a3a3',
@@ -34,6 +39,9 @@ class Texture:
     
     def brick(self, **colors):
         return self.square(bounds=(0, 0, 16, 8), **colors).square(bounds=(8, 8, 17, 16), **colors).square(bounds=(-1, 8, 8, 16), **colors)
+    
+    def brick_ore(self, **colors):
+        return self.square(bounds=(2, 2, 6, 5), **colors).square(bounds=(9, 3, 13, 6), **colors).square(bounds=(10, 10, 14, 13), **colors).square(bounds=(1, 11, 5, 14), **colors)
     
     def ore(self, **colors):
         return self.square(bounds=(2, 3, 7, 7), **colors).square(bounds=(9, 3, 13, 6), **colors).square(bounds=(3, 9, 8, 14), **colors).square(bounds=(10, 7, 14, 11), **colors)
@@ -108,8 +116,12 @@ def simplify_blocks():
     stone.save(blocks / 'stone.png')
     stone.ore(**palette['diamond']).save(blocks / 'diamond_ore.png')
     stone.ore(**palette['stone']).save(blocks / 'cobblestone.png')
+    stone.ore(**palette['moss']).save(blocks / 'cobblestone_mossy.png')
     # stone bricks
-    Texture().brick(**palette['stone']).save(blocks / 'stonebrick.png')
+    stone_brick = Texture().brick(**palette['stone'])
+    stone_brick.save(blocks / 'stonebrick.png')
+    stone_brick.brick_ore(**palette['stone']).save(blocks / 'stonebrick_cracked.png')
+    stone_brick.brick_ore(**palette['moss']).save(blocks / 'stonebrick_mossy.png')
     # diamond
     Texture().square(**palette['diamond']).save(blocks / 'diamond_block.png')
     #TODO others
