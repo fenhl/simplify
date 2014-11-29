@@ -10,10 +10,25 @@ target_dir = pathlib.Path(__file__).resolve().parent / 'simplify'
 transparent = (0, 0, 0, 0)
 
 palette = {
+    'coal': {
+        'color': '#171717',
+        'highlight_color': '#303030',
+        'shadow_color': '#000000'
+    },
     'diamond': {
         'color': '#80ffff',
         'highlight_color': '#b0ffff',
         'shadow_color': '#00ffff'
+    },
+    'gold': {
+        'color': '#ffff00',
+        'highlight_color': '#ffff96',
+        'shadow_color': '#ef8f1b'
+    },
+    'iron': {
+        'color': '#cecece',
+        'highlight_color': '#ffffff',
+        'shadow_color': '#b5b5b5'
     },
     'moss': {
         'color': '#234721',
@@ -59,10 +74,14 @@ class Texture:
         draw.line([(bounds[0] + 1, bounds[3] - 1), (bounds[2] - 1, bounds[3] - 1)], fill=shadow_color)
         draw.line([(bounds[2] - 1, bounds[1] + 1), (bounds[2] - 1, bounds[3] - 2)], fill=shadow_color)
         # the rest of the square
-        draw.rectangle([(bounds[0] + 1, bounds[1] + 1), (bounds[2] - 2, bounds[3] - 2)], fill=color)
+        if bounds[2] - bounds[0] > 2 and bounds[3] - bounds[1] > 2:
+            draw.rectangle([(bounds[0] + 1, bounds[1] + 1), (bounds[2] - 2, bounds[3] - 2)], fill=color)
         draw.point((bounds[0], bounds[3] - 1), fill=color)
         draw.point((bounds[2] - 1, bounds[1]), fill=color)
         return self.__class__.from_image(PIL.Image.alpha_composite(self.image, new_layer))
+    
+    def stripes(self, **colors):
+        return self.square(bounds=(2, 3, 14, 5), **colors).square(bounds=(2, 7, 14, 9), **colors).square(bounds=(2, 11, 14, 13), **colors)
 
 def clear_target():
     def recursive_remove(path):
@@ -75,6 +94,13 @@ def clear_target():
     
     if target_dir.exists():
         recursive_remove(target_dir)
+
+def inverted_colors(colors):
+    return {
+        'color': colors['color'],
+        'highlight_color': colors['shadow_color'],
+        'shadow_color': colors['highlight_color']
+    }
 
 def iter_image(img):
     for y in range(img.size[1]):
@@ -114,6 +140,9 @@ def simplify_blocks():
     # stone
     stone = Texture().square(**palette['stone'])
     stone.save(blocks / 'stone.png')
+    stone.ore(**palette['coal']).save(blocks / 'coal_ore.png')
+    stone.ore(**palette['iron']).save(blocks / 'iron_ore.png')
+    stone.ore(**palette['gold']).save(blocks / 'gold_ore.png')
     stone.ore(**palette['diamond']).save(blocks / 'diamond_ore.png')
     stone.ore(**palette['stone']).save(blocks / 'cobblestone.png')
     stone.ore(**palette['moss']).save(blocks / 'cobblestone_mossy.png')
@@ -122,6 +151,14 @@ def simplify_blocks():
     stone_brick.save(blocks / 'stonebrick.png')
     stone_brick.brick_ore(**palette['stone']).save(blocks / 'stonebrick_cracked.png')
     stone_brick.brick_ore(**palette['moss']).save(blocks / 'stonebrick_mossy.png')
+    # coal
+    coal_block = Texture().square(**palette['coal'])
+    coal_block.save(blocks / 'coal_block.png')
+    coal_block.stripes(**inverted_colors(palette['stone'])).save(blocks / 'bedrock.png')
+    # iron
+    Texture().square(**palette['iron']).stripes(**inverted_colors(palette['iron'])).save(blocks / 'iron_block.png')
+    # gold
+    Texture().square(**palette['gold']).save(blocks / 'gold_block.png')
     # diamond
     Texture().square(**palette['diamond']).save(blocks / 'diamond_block.png')
     #TODO others
