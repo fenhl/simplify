@@ -9,7 +9,7 @@ There are some [screenshots][].
 Download
 ========
 
-You can download Simplify as a zip from the [releases][] page. Releases are namef after their corresponding Minecraft version.
+You can download Simplify as a zip from the [releases][] page. Releases are named after their corresponding Minecraft version.
 
 Snapshots and pre-releases
 ==========================
