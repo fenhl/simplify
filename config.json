@@ -1,0 +1,200 @@
+{
+    "textures": {
+        "blocks": {
+            "bedrock.png": {
+                "layers": [
+                    {
+                        "palette": "coal",
+                        "shape": "square"
+                    },
+                    {
+                        "inverted": true,
+                        "palette": "stone",
+                        "shape": "stripes"
+                    }
+                ]
+            },
+            "coal_block.png": {
+                "layers": [
+                    {
+                        "palette": "coal",
+                        "shape": "square"
+                    }
+                ]
+            },
+            "coal_ore.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "square"
+                    },
+                    {
+                        "palette": "coal",
+                        "shape": "ore"
+                    }
+                ]
+            },
+            "cobblestone.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "square"
+                    },
+                    {
+                        "palette": "stone",
+                        "shape": "ore"
+                    }
+                ]
+            },
+            "cobblestone_mossy.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "square"
+                    },
+                    {
+                        "palette": "moss",
+                        "shape": "ore"
+                    }
+                ]
+            },
+            "diamond_block.png": {
+                "layers": [
+                    {
+                        "palette": "diamond",
+                        "shape": "square"
+                    }
+                ]
+            },
+            "diamond_ore.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "square"
+                    },
+                    {
+                        "palette": "diamond",
+                        "shape": "ore"
+                    }
+                ]
+            },
+            "gold_block.png": {
+                "layers": [
+                    {
+                        "palette": "gold",
+                        "shape": "square"
+                    }
+                ]
+            },
+            "gold_ore.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "square"
+                    },
+                    {
+                        "palette": "gold",
+                        "shape": "ore"
+                    }
+                ]
+            },
+            "iron_block.png": {
+                "layers": [
+                    {
+                        "palette": "iron",
+                        "shape": "square"
+                    },
+                    {
+                        "inverted": true,
+                        "palette": "iron",
+                        "shape": "stripes"
+                    }
+                ]
+            },
+            "iron_ore.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "square"
+                    },
+                    {
+                        "palette": "iron",
+                        "shape": "ore"
+                    }
+                ]
+            },
+            "stone.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "square"
+                    }
+                ]
+            },
+            "stonebrick.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "brick"
+                    }
+                ]
+            },
+            "stonebrick_cracked.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "brick"
+                    },
+                    {
+                        "palette": "stone",
+                        "shape": "brickOre"
+                    }
+                ]
+            },
+            "stonebrick_mossy.png": {
+                "layers": [
+                    {
+                        "palette": "stone",
+                        "shape": "brick"
+                    },
+                    {
+                        "palette": "moss",
+                        "shape": "brickOre"
+                    }
+                ]
+            }
+        }
+    },
+    "palette": {
+        "coal": {
+            "base": "#171717",
+            "highlight": "#303030",
+            "shadow": "#000000"
+        },
+        "diamond": {
+            "base": "#80ffff",
+            "highlight": "#b0ffff",
+            "shadow": "#00ffff"
+        },
+        "gold": {
+            "base": "#ffff00",
+            "highlight": "#ffff96",
+            "shadow": "#ef8f1b"
+        },
+        "iron": {
+            "base": "#cecece",
+            "highlight": "#ffffff",
+            "shadow": "#b5b5b5"
+        },
+        "moss": {
+            "base": "#234721",
+            "highlight": "#2b6926",
+            "shadow": "#1f2a2f"
+        },
+        "stone": {
+            "base": "#808080",
+            "highlight": "#a3a3a3",
+            "shadow": "#5f5f5f"
+        }
+    }
+}
