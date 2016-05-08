@@ -172,7 +172,7 @@ def simplify():
     save_json('pack.mcmeta', {
         'pack': {
             'description': "Simplify - a texture pack by Fenhl",
-            'pack_format': 1
+            'pack_format': 2
         }
     })
     simplify_textures()
