@@ -143,7 +143,7 @@ def save_json(path, data):
 
 def simplify_textures(path=['textures']):
     config = CONFIG
-    directory = target_dir / 'minecraft'
+    directory = target_dir / 'assets' / 'minecraft'
     for path_segment in path:
         config = config[path_segment]
         directory /= path_segment
